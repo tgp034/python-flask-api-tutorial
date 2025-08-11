@@ -4,7 +4,7 @@ app = Flask(__name__)
 todos = [ { "label": "My first task", "done": False } ]
 
 @app.route('/todos', methods=['GET'])
-def hello_world():
+def get_todos():
     return jsonify(todos)
 
 @app.route('/todos', methods=['POST'])
